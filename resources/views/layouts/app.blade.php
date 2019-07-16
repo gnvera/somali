@@ -36,14 +36,26 @@
         <ul class="navbar-nav ml-auto">
           
           @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
-                                </li>
-                            @endif
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Catálogo') }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Proyectos') }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Contacto') }}</a>
+            </li>
+
+            <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">account_box</i>
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+               <a class="nav-link" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
+              <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
+            </div>
+          </li>
+                            
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -63,7 +75,7 @@
                                 </div>
                             </li>
                         @endguest
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
               <i class="fa fa-twitter"></i>
             </a>
@@ -77,7 +89,7 @@
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
               <i class="fa fa-instagram"></i>
             </a>
-          </li>
+          </li>-->
         </ul>
       </div>
     </div>
