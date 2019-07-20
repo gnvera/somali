@@ -1,3 +1,11 @@
+<style type="text/css">
+    .gris{
+        background: rgba(0,0,0,0.199)!important;
+    }
+    .top-nav-collapse{
+        background: rgba(0,0,0,0.7774)!important;
+    }
+</style>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +14,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    SOMALI | Soluciones con Materiales Livianos S.A. de C.V.
+    @yield('title', 'SOMALI | Soluciones con Materiales Livianos S.A. de C.V.')
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -19,7 +27,7 @@
 </head>
 
 <body class="@yield('body-class')">
-    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg scrolling-navbar" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/">
@@ -37,13 +45,13 @@
           
           @guest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Catálogo') }}</a>
+                <a class="nav-link" href="{{ route('catalogs') }}">{{ __('Catálogo') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Proyectos') }}</a>
+                <a class="nav-link" href="{{ route('projects') }}">{{ __('Proyectos') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Contacto') }}</a>
+                <a class="nav-link" href="#">{{ __('Contacto') }}</a>
             </li>
 
             <li class="dropdown nav-item">
