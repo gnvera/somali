@@ -8,7 +8,7 @@
       <div class="row">
         <div class="container text-center">
           <img src="{{asset('/img/logoBlanco.png')}}" width="800" height="350" class="d-inline-block align-top img-fluid" alt="">
-          <h3>Si lo puedes imaginar... Nosotros lo materializamos</h3>
+          <h3><strong>Si lo puedes imaginar... Nosotros lo materializamos</strong></h3>
           <br>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
             <i class="fa fa-play"></i> Reproducir video
