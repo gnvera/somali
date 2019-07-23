@@ -1,11 +1,4 @@
-<style type="text/css">
-    .gris{
-        background: rgba(0,0,0,0.199)!important;
-    }
-    .top-nav-collapse{
-        background: rgba(0,0,0,0.7774)!important;
-    }
-</style>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -27,7 +20,7 @@
 </head>
 
 <body class="@yield('body-class')">
-    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg scrolling-navbar" color-on-scroll="100" id="sectionsNav">
+    <nav class="navbar bg-dark navbar-color-on-scroll fixed-top navbar-expand-lg scrolling-navbar" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/">
@@ -51,7 +44,7 @@
                 <a class="nav-link" href="{{ route('projects') }}">{{ __('Proyectos') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">{{ __('Contacto') }}</a>
+                <a class="nav-link" href="{{ route('contact') }}">{{ __('Contacto') }}</a>
             </li>
 
             <li class="dropdown nav-item">
@@ -63,7 +56,15 @@
               <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
             </div>
           </li>
-                            
+          <li class="nav-item">
+        
+          
+  <button class="btn btn-success btn-round" type="button">
+    <i class="fa fa-phone"></i>&nbsp;33 32325236
+  </button>
+  </li> 
+
+
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -114,6 +115,9 @@
     <script src="{{ asset ('/js/jquery.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/js/material.min.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <script src="{{ asset ('/js/nouislider.min.js') }}" type="text/javascript"></script>

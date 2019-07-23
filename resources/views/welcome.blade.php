@@ -8,10 +8,11 @@
       <div class="row">
         <div class="container text-center">
           <img src="{{asset('/img/logoBlanco.png')}}" width="800" height="350" class="d-inline-block align-top img-fluid" alt="">
-          <h3><strong>Si lo puedes imaginar... Nosotros lo materializamos</strong></h3>
+          <h3 class="title">Si lo puedes imaginar... Nosotros lo materializamos</h3>
           <br>
+          <p class="text-white text-muted"><i class="fa fa-map-marker"></i>&nbsp;Xóchitl 4313. El Zapote, 45040. Zapopan, Jalisco</p>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
-            <i class="fa fa-play"></i> Reproducir video
+            <i class="fa fa-play"></i> Conócenos
           </a>
         </div>
       </div>
@@ -23,14 +24,14 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">¿Quiénes somos?</h2>
-            <h5 class="description">Somos una empresa comprometida en comercializar y dar soluciones con productos
+            <h5 class="">Somos una empresa comprometida en comercializar y dar soluciones con productos
             relacionados con la construcción liviana, de marcas reconocidas por su calidad.
             Contamos con mas de 5 años de experiencia en el mercado, dando servicio a diferentes
             constructoras del estado de Jalisco.</h5>
           </div>
         </div>
 
-        <div class="features my-3">
+        <div class="features mt-5">
             <div class="row">
   <div class="col-md-6">
     <div class="card">
@@ -87,8 +88,8 @@
 </div>
         </div>
 
-        <div class="features jumbotron mt-5">
-            <h2 class="title">Comercializamos</h2>
+        <div class="features jumbotron mt-5" style="background-image: url('{{ asset('/img/city2.png') }}')">
+            <h2 class="title text-white">Comercializamos</h2>
           <div class="row">
 
             <div class="col-md-4">
@@ -96,8 +97,8 @@
                 <div class="icon icon-info">
                   <i class="material-icons">business</i>
                 </div>
-                <h4 class="info-title">Suministros</h4>
-                <p>Abastecimientos industriales y productos relacionados a la adecuación de bienes inmuebles.</p>
+                <h3 class="info-title text-white">Suministros</h3>
+                <p class="text-white">Abastecimientos industriales y productos relacionados a la adecuación de bienes inmuebles.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -105,8 +106,8 @@
                 <div class="icon icon-success">
                   <i class="material-icons">build</i>
                 </div>
-                <h4 class="info-title">Herramientas</h4>
-                <p>Manuales, mecánicas y eléctricas.</p>
+                <h3 class="info-title text-white">Herramientas</h3>
+                <p class="text-white">Manuales, mecánicas y eléctricas.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -114,18 +115,18 @@
                 <div class="icon icon-danger">
                   <i class="material-icons">highlight</i>
                 </div>
-                <h4 class="info-title">Insumos</h4>
-                <p>Artículos electrónicos, maquinaria ligera, ferretería y eléctrica.</p>
+                <h3 class="info-title text-white">Insumos</h3>
+                <p class="text-white">Artículos electrónicos, maquinaria ligera, ferretería y eléctrica.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section text-center">
+      <div class="section text-center ">
         <h2 class="title">Afiliaciones</h2>
-        <h5 class="description">Somos una empresa afiliada y con participación a CMIC Jalisco, Cámara de Comercio y COPARMEX.</h5>
+        <h5 class="">Somos una empresa afiliada y con participación a CMIC Jalisco, Cámara de Comercio y COPARMEX.</h5>
         <div class="team">
-          <div class="row">
+          <div class="row my-5">
             <div class="col-md-4">
               <div class="team-player">
                 <div class="card card-plain">
@@ -138,12 +139,13 @@
                   </h4>
                   <div class="card-body">
                     <br>
-                    <p class="card-description">Institución pública, autónoma, con personalidad jurídica propia y jurisdicción en todo el territorio de la República Mexicana</p>
+                    <p class="">Institución pública, autónoma, con personalidad jurídica propia y jurisdicción en todo el territorio de la República Mexicana</p>
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    
+                    <a href="https://www.cmicjalisco.org/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-globe"></i></a>
+                    <a href="https://www.facebook.com/cmicjalisco/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/cmicjalisco" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
                   </div>
                 </div>
               </div>
@@ -159,12 +161,10 @@
                     <small class="card-description text-muted">Cámara Nacional de Comercio, Industria, Agricultura y Minería de Guadalajara</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Organización sin fines de lucro que tiene como objetivo agrupar, representar y defender a las empresas y a los comerciantes de una determinada zona o región. </p>
+                    <p class="">Organización sin fines de lucro que tiene como objetivo agrupar, representar y defender a las empresas y a los comerciantes de una determinada zona o región. </p>
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.camaradecomerciogdl.mx/#/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-globe"></i></a>
                   </div>
                 </div>
               </div>
@@ -180,11 +180,12 @@
                     <small class="card-description text-muted">Confederación Patronal de la República Mexicana</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Sindicato patronal independiente, apartidista y de afiliación voluntaria que reúne a empresarios de todos tamaños y sectores, unidos por un profundo compromiso con México</p>
+                    <p class="">Sindicato patronal independiente, apartidista y de afiliación voluntaria que reúne a empresarios de todos tamaños y sectores, unidos por un profundo compromiso con México</p>
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://coparmex.org.mx/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-globe"></i></a>
+                    <a href="https://www.facebook.com/coparmexnacional/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/Coparmex" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
                   </div>
                 </div>
               </div>
@@ -206,15 +207,15 @@
         <div class="carousel-inner">
             <div class="carousel-item active mb-5 text-center">
                 <h2 class="text-center title">Testimonios</h2>
-                <h4 class="text-center description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium!</h4>
+                <h4 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium!</h4>
             </div>
             <div class="carousel-item mb-5 text-center">
                 <h2 class="text-center title">Testimonios</h2>
-                <h4 class="text-center description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium!</h4>
+                <h4 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium!</h4>
             </div>
             <div class="carousel-item mb-5 text-center">
                 <h2 class="text-center title">Testimonios</h2>
-                <h4 class="text-center description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium!</h4>
+                <h4 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium!</h4>
             </div>
         </div>
     </div>
@@ -235,25 +236,17 @@
             </a>
           </li>
           <li>
-            <a href="https://creative-tim.com/presentation">
-              Contacto
+            <a>
+              <i class="fa fa-map-marker"></i>&nbsp;Xóchitl 4313. El Zapote, 45040. Zapopan, Jalisco
             </a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="" target="_blank" data-original-title="Like us on Facebook">
               <i class="fa fa-facebook-square fa-2x"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
-              <i class="fa fa-instagram fa-2x"></i>
-            </a>
-          </li>
+          
           
         </ul>
       </nav>
@@ -262,8 +255,8 @@
         &copy;
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+        </script>
+        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
       </div>
     </div>
   </footer>

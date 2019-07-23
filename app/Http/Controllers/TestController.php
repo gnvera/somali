@@ -9,7 +9,6 @@ class TestController extends Controller
 {
 	public function welcome()
 	{
-		
 		return view('welcome');
 	}
 
@@ -24,5 +23,9 @@ class TestController extends Controller
 		return view('projects');
 	}
 
+	public function contact()
+	{
+		return view('contact');
+	}
     //
 }

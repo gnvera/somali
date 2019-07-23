@@ -8,27 +8,14 @@
    <div class="page-header header-filter" data-parallax="true" style="background-image: url('{{asset('img/indexCut.png')}}');"></div>
   <div class="main main-raised">
     <div class="profile-content">
-      <div class="container">
+      <div class="container text-center">
         <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-            <div class="profile">
-              
-              <div class="name my-5">
-                <h3 class="title">Proyectos realizados</h3>
-                
-                <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a>
-              </div>
-            </div>
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title mb-5">Proyectos Realizados</h2>
+            <h5 class="">Distintos clientes nos han brindado la oportunidad de colaborar en sus proyectos de construcción, brindándoles la mejor atención e insumos de alta calidad. Soluciones con Materiales Livianos S.A. de C.V. tiene el privilegio de trabajar en sector comercial, residencial, industrial, educativo y en el sector médico.</h5>
           </div>
         </div>
-        <div class="description text-center">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.  </p>
-        </div>    
+           
         <div class="row">
           <div class="col-md-12 ml-auto mr-auto">
             <div class="profile-tabs">
@@ -64,7 +51,7 @@
         </div>
         <div class="tab-content tab-space">
           <div class="tab-pane active text-center gallery" id="comercial">
-            <h3 class="title">LAND MARK <br>Andares</h3>
+            <h5 class=" mb-5">LAND MARK Andares. Zapopan, Jalisco.</h5>
             
               
             
@@ -126,33 +113,32 @@
       <nav class="float-left">
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
+            <a href="/">
+              <img src="{{asset('/img/logo.png')}}" width="200" height="50" class="img-fluid" alt="">
             </a>
           </li>
           <li>
-            <a href="https://creative-tim.com/presentation">
-              About Us
+            <a>
+              <i class="fa fa-map-marker"></i>&nbsp;Xóchitl 4313. El Zapote, 45040. Zapopan, Jalisco
             </a>
           </li>
-          <li>
-            <a href="http://blog.creative-tim.com">
-              Blog
+          
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="" target="_blank" data-original-title="Like us on Facebook">
+              <i class="fa fa-facebook-square fa-2x"></i>
             </a>
           </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
-            </a>
-          </li>
+          
+          
         </ul>
       </nav>
       <div class="copyright float-right">
+
         &copy;
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+        </script>
+        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
       </div>
     </div>
   </footer>
