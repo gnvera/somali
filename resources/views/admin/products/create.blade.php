@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Catálogo | SOMALI ')
+@section('title', 'Nuevo Producto | SOMALI ')
 
 @section('body-class', 'profile-page')
 
