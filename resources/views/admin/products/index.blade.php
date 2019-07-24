@@ -17,78 +17,51 @@
               </div>
           </div>
        
-        <div class="team">
-          <div class="row">
+        <div class="team ">
+          <div class="row justify-content-center">
+            <a href="{{ url('/admin/products/create') }}" class="btn btn-success btn-round">Nuevo producto</a>
             
             <table class="table">
             <thead>
                 <tr>
                     <th class="text-center">#</th>
-                    <th>Name</th>
-                    <th>Job Position</th>
-                    <th>Since</th>
-                    <th class="text-right">Salary</th>
-                    <th class="text-right">Actions</th>
+                    <th>Nombre</th>
+                    <th class="col-md-4">Descripción</th>
+                    <th>Categoría</th>
+                    <th class="text-right">Precio</th>
+                    <th class="text-right">Acciones</th>
                 </tr>
             </thead>
             <tbody>
+              @foreach ($products as $product)
                 <tr>
-                    <td class="text-center">1</td>
-                    <td>Andrew Mike</td>
-                    <td>Develop</td>
-                    <td>2013</td>
-                    <td class="text-right">&euro; 99,225</td>
+                    <td class="text-center">{{ $product->id }}</td>
+                    <td>{{ $product->name }}</td>
+                    <td>{{ $product->description }}</td>
+                    <td>{{ $product->category ? $product->category->name : 'General' }}</td>
+                    <td class="text-right">&dollar; {{ $product->price }}</td>
                     <td class="td-actions text-right">
-                        <button type="button" rel="tooltip" class="btn btn-info">
-                            <i class="material-icons">person</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-success">
-                            <i class="material-icons">edit</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-danger">
+                        <form method="post" action="{{ url('/admin/products/'.$product->id) }}">
+                          <!-- Acciones de método post requieren el siguiente token-->
+                          {{ csrf_field() }}
+                          {{ method_field('DELETE') }}
+                          <a href="#" rel="tooltip" title="Ver producto" class="btn btn-info btn-simple btn-xs">
+                            <i class="material-icons">info</i>
+                          </a>
+                          <a href="{{ url('/admin/products/'.$product->id.'/edit') }}" rel="tooltip" title="Editar producto" class="btn btn-success btn-simple btn-xs">
+                              <i class="material-icons">edit</i>
+                          </a>
+
+                          <button type="submit" rel="tooltip" title="Eliminar producto" class="btn btn-danger btn-simple btn-xs">
                             <i class="material-icons">close</i>
-                        </button>
+                          </button>
+                        </form>
                     </td>
                 </tr>
-                <tr>
-                    <td class="text-center">2</td>
-                    <td>John Doe</td>
-                    <td>Design</td>
-                    <td>2012</td>
-                    <td class="text-right">&euro; 89,241</td>
-                    <td class="td-actions text-right">
-                        <button type="button" rel="tooltip" class="btn btn-info btn-round">
-                            <i class="material-icons">person</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-success btn-round">
-                            <i class="material-icons">edit</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-danger btn-round">
-                            <i class="material-icons">close</i>
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center">3</td>
-                    <td>Alex Mike</td>
-                    <td>Design</td>
-                    <td>2010</td>
-                    <td class="text-right">&euro; 92,144</td>
-                    <td class="td-actions text-right">
-                        <button type="button" rel="tooltip" class="btn btn-info btn-simple">
-                            <i class="material-icons">person</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                            <i class="material-icons">edit</i>
-                        </button>
-                        <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
-                            <i class="material-icons">close</i>
-                        </button>
-                    </td>
-                </tr>
+              @endforeach
             </tbody>
         </table>
-        
+        {{ $products->links() }}
           </div>
         </div>
       </div>
@@ -131,8 +104,8 @@
         &copy;
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+        </script>
+        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
       </div>
     </div>
   </footer>
