@@ -27,5 +27,9 @@ class TestController extends Controller
 	{
 		return view('contact');
 	}
+	public function consortium()
+	{
+		return view('consortium');
+	}
     //
 }

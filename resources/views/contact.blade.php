@@ -158,7 +158,7 @@ position:absolute;
         <script>
           document.write(new Date().getFullYear())
         </script>
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+        <a href="#" target="_blank">SOMALI</a>.
       </div>
     </div>
   </footer>

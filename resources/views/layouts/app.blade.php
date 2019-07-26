@@ -20,11 +20,11 @@
 </head>
 
 <body class="@yield('body-class')">
-    <nav class="navbar bg-dark navbar-color-on-scroll fixed-top navbar-expand-lg scrolling-navbar" color-on-scroll="100" id="sectionsNav">
+    <nav class="navbar bg-light navbar-color-on-scroll fixed-top navbar-expand-lg scrolling-navbar" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/">
-            <img src="{{asset('/img/logoBlanco.png')}}" width="200" height="50" class="d-inline-block align-top img-fluid" alt="">
+            <img src="{{asset('/img/logo.png')}}" width="200" height="50" class="d-inline-block align-top img-fluid" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -37,6 +37,11 @@
         <ul class="navbar-nav ml-auto">
           
           @guest
+          <li class="nav-item">
+            <a class="nav-link">
+              SOMALI
+            </a>
+          </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('catalogs') }}">{{ __('Catálogo') }}</a>
             </li>
@@ -44,9 +49,13 @@
                 <a class="nav-link" href="{{ route('projects') }}">{{ __('Proyectos') }}</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="{{ route('consortium') }}">
+                {{ __('Consorcios') }}
+              </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('contact') }}">{{ __('Contacto') }}</a>
             </li>
-
             <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
               <i class="material-icons">account_box</i>
@@ -60,7 +69,7 @@
         
           
   <button class="btn btn-success btn-round" type="button">
-    <i class="fa fa-phone"></i>&nbsp;33 32325236
+    <i class="fa fa-phone"></i>&nbsp;33 31050693
   </button>
   </li> 
 

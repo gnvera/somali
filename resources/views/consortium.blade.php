@@ -1,68 +1,53 @@
 @extends('layouts.app')
 
-@section('title', 'Catálogo | SOMALI ')
-
-@section('body-class', 'profile-page')
+@section('body-class', 'landing-page')
 
 @section('content')
-<div class="page-header header-filter" data-parallax="true" style="background-image: url('{{asset('img/indexCut.png')}}');"></div>
-  <div class="main main-raised">
-    <div class="profile-content">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-            <div class="profile">
-              <div class="avatar">
-                
-                <img src="{{asset('img/shopping-cart.jpg')}}" alt="Circle Image" class="img-raised rounded-circle img-fluid">
-              </div>
-              <div class="name">
-                <h2 class="title mb-5">Productos Disponibles</h2>
-                
-              </div>
-            </div>
-          </div>
+
+  <!--SLIDER-->
+    
+    <!--SLIDER-->
+    
+    <!--SECCION 1-->
+    <section class="container mt-5">
+      <br><br>
+        <h1 class="display-4 text-center title"><strong>Consorcios</strong></h1>
+        <hr>
+        <p class="lead text-justify my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> 
+      </div>
+    </section>
+
+    <div class="container mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card" >
+  <img class="card-img-top" src="{{asset('img/ampereLogo.png')}}" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lead text-center">AMPERE Construcciones S.A. de C.V.</p>
+  </div>
+</div>
         </div>
-      
-       <div class="row">
-            @foreach($products as $product)
-            <div class="col-md-4">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="{{ $product->images()->first()->image }}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid" >
-                  </div>
-                  <h4 class="card-title">{{ $product->name }}
-                    <br>
-                    <small class="card-description text-muted">{{ $product->category->name }}</small>
-                  </h4>
-                  <div class="card-body">
-                    <br>
-                    <p class="card-description">
-                      {{ $product->description }}
-                    </p>
-                  </div>
-                  <div class="card-footer justify-content-center">
-                    <!--<a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>-->
-                  </div>
-                </div>
-              </div>
-            </div>
-            @endforeach
-          </div>
-      
-          
-         
+        <div class="col-md-6">
+          <div class="card" >
+  <img class="card-img-top" src="{{asset('img/ampereLogo.png')}}" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lead text-center">Rosso Ingeniería</p>
+  </div>
+</div>
         </div>
       </div>
     </div>
-  </div>
+        
+    <!--SECTION 1-->
 
-
-
-   <!--FOOTER-->
+    <!--FOOTER-->
     <section class="footer">
       <div class="bg-success text-white">
                 <div class="container">
@@ -127,12 +112,12 @@
                 </div>
             </div>
         </footer>
-        <div class="footer-copyright text-center py-3 text-muted mt-5">
+        <div class="footer-copyright text-center py-3 text-muted">
            &copy;
            <script>
             document.write(new Date().getFullYear())
           </script>
           <a class="dark-grey-text" href="">SOMALI</a>
         </div>
-    
+       
 @endsection

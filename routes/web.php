@@ -4,6 +4,7 @@ Route::get('/', 'TestController@welcome')->name('home');;
 Route::get('/catalogs', 'TestController@catalogs')->name('catalogs');;
 Route::get('/projects', 'TestController@projects')->name('projects');;
 Route::get('/contact', 'TestController@contact')->name('contact');;
+Route::get('/consortium', 'TestController@consortium')->name('consortium');;
 
 Auth::routes();
 
