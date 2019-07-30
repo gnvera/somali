@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="{{ asset ('/css/material-kit.css?v=2.0.5') }}" rel="stylesheet"/>
+  @yield('styles')
   
 </head>
 
@@ -21,7 +22,7 @@
   <nav class="navbar bg-light navbar-color-on-scroll fixed-top navbar-expand-lg scrolling-navbar" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand">
           <img src="{{asset('/img/logo.png')}}" width="200" height="50" class="d-inline-block align-top img-fluid" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,11 +36,9 @@
         <ul class="navbar-nav ml-auto">
           
           @guest
-          <li class="nav-item">
-            <a class="nav-link">
-              SOMALI
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">{{ __('Inicio') }}</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('catalogs') }}">{{ __('Catálogo') }}</a>
             </li>
@@ -50,6 +49,7 @@
               </a>
               <div class="dropdown-menu dropdown-with-icons">
                 <a class="nav-link" href="#">Comisión Federal de Electricidad</a>
+                <a class="nav-link" href="#">Sector Industrial</a>
                 <a class="nav-link" href="#">Sector Comercial</a>
                 <a class="nav-link" href="#">Sector Residencial</a>
               </div>
@@ -88,7 +88,21 @@
               {{ Auth::user()->name }} <span class="caret"></span>
             </a>
 
+
+
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ url('/home') }}">
+                  Dashboard
+              </a>
+              <a class="dropdown-item" href="{{ route('catalogs') }}">
+                  Catálogo
+              </a>
+              @if (auth()->user()->admin)
+              
+              <a class="dropdown-item" href="{{ url('/admin/products') }}">
+                  {{ __('Gestionar productos') }}
+              </a>
+              @endif
               <a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">

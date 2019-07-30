@@ -5,142 +5,97 @@
 @section('body-class', 'profile-page')
 
 @section('content')
-   <div class="page-header header-filter" data-parallax="true" style="background-image: url('{{asset('img/indexCut.png')}}');"></div>
-  <div class="main main-raised">
-    <div class="profile-content">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="title mb-5">Proyectos Realizados</h2>
-            <h5 class="">Distintos clientes nos han brindado la oportunidad de colaborar en sus proyectos de construcción, brindándoles la mejor atención e insumos de alta calidad. Soluciones con Materiales Livianos S.A. de C.V. tiene el privilegio de trabajar en sector comercial, residencial, industrial, educativo y en el sector médico.</h5>
-          </div>
-        </div>
-           
-        <div class="row">
-          <div class="col-md-12 ml-auto mr-auto">
-            <div class="profile-tabs">
-              <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#comercial" role="tab" data-toggle="tab">
-                    <i class="material-icons">store</i> Sector comercial
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#residencial" role="tab" data-toggle="tab">
-                    <i class="material-icons">location_city</i> Sector residencial
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#medico" role="tab" data-toggle="tab">
-                    <i class="material-icons">favorite</i> Consultorios médicos
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#industrial" role="tab" data-toggle="tab">
-                    <i class="material-icons">business</i> Sector industrial
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#educativo" role="tab" data-toggle="tab">
-                    <i class="material-icons">school</i> Sector educativo
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="tab-content tab-space">
-          <div class="tab-pane active text-center gallery" id="comercial">
-            <h5 class=" mb-5">LAND MARK Andares. Zapopan, Jalisco.</h5>
-            
-              
-            
-            <div class="row">
-              <div class="col-md-6 ml-auto">
-                <img src="{{ asset('img/projects/comercial1.png') }}" class="rounded">
-                <img src="{{ asset('img/projects/comercial2.png') }}" class="rounded">
-              </div>
-              <div class="col-md-6 mr-auto">
-                <img src="{{ asset('img/projects/comercial3.png') }}" class="rounded">
-                <img src="{{ asset('img/projects/comercial4.png') }}" class="rounded">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane text-center gallery" id="residencial">
-            <div class="row">
-              <div class="col-md-6 ml-auto">
-                <img src="{{ asset('img/projects/residencial1.png') }}" class="rounded">
-              </div>
-              <div class="col-md-6 mr-auto">
-                <img src="{{ asset('img/projects/residencial2.png') }}" class="rounded">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane text-center gallery" id="medico">
-            <div class="row">
-              <div class="col-md-6 ml-auto">
-                <img src="{{ asset('img/projects/medico1.png') }}" class="rounded">
-              </div>
-              <div class="col-md-6 mr-auto">
-                <img src="{{ asset('img/projects/medico2.png') }}" class="rounded">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane text-center gallery" id="industrial">
-            <div class="row">
-              <div class="col-md-6 ml-auto">
-                <img src="{{ asset('img/projects/industrial1.png') }}" class="rounded">
-              </div>
-              <div class="col-md-6 mr-auto">
-                <img src="{{ asset('img/projects/industrial2.png') }}" class="rounded">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane text-center gallery" id="educativo">
-            <div class="row">
-              <div class="col-md-12 ml-auto">
-                <img src="{{ asset('img/projects/educativo1.png') }}" class="rounded">
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer footer-default">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="/">
-              <img src="{{asset('/img/logo.png')}}" width="200" height="50" class="img-fluid" alt="">
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa fa-map-marker"></i>&nbsp;Xóchitl 4313. El Zapote, 45040. Zapopan, Jalisco
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="" target="_blank" data-original-title="Like us on Facebook">
-              <i class="fa fa-facebook-square fa-2x"></i>
-            </a>
-          </li>
-          
-          
-        </ul>
-      </nav>
-      <div class="copyright float-right">
+   <section class="container mt-5">
+      <br><br>
+        <h1 class="display-4 text-center title"><strong>Proyectos</strong></h1>
+        <hr>
+        <p class="lead text-justify my-4">
+            <table class="table table-striped table-dark text-center text-uppercase font-weight-light">
+              <thead>
+                <tr>
+                  <th scope="col">Sector comercial</th>
+                  <th scope="col">Sector residencial</th>
+                  <th scope="col">Consultorios médicos</th>
+                  <th scope="col">Sector industrial</th>
+                  <th scope="col">Sector educativo</th>
+                </tr>
+              </thead>
+            </table>
+        </p> 
+    </section>
+        
+    <!--SECTION 1-->
 
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        <a href="#" target="_blank">SOMALI</a>.
-      </div>
-    </div>
-  </footer>
-    
+    <!--FOOTER-->
+    <section class="footer">
+      <div class="bg-success text-white">
+                <div class="container">
+                    <div class="row py-4 d-flex align-items-center">
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h5 class="mb-0 text-uppercase">Síguenos en nuestras redes sociales</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <a class="fb-ic">
+                                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a class="tw-ic">
+                                <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a class="gplus-ic">
+                                <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a class="li-ic">
+                                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a class="ins-ic">
+                                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer font-small blue-grey lighten-5 bg-dark text-muted">
+
+              
+           
+            <div class="container text-center text-white text-md-left mt-5 bg-dark">
+                <div class="row mt-3 white-text">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                        <h5 class="text-uppercase font-weight-bold">SOMALI</h5>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <img src="img/logoBlanco.png" class="img-fluid" alt="somalimx">
+                        <br><br>
+                        <p class="dark-grey-text">Si lo puedes imaginar... </p>
+                        <p class="text-bold font-italic"><strong>Nosotros lo materializamos</strong></p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h5 class="text-uppercase font-weight-bold">Certificaciones</h5>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h5 class="text-uppercase font-weight-bold">Contacto</h5>
+                            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                              <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Xóchitl 4313, El Zapote, 45040. Zapopan, Jalisco</p>
+                            <p>
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;somaliventas@gmail.com</p>
+                            <p>
+                              <i class="fa fa-phone" aria-hidden="true"></i> + 01 234 567 88</p>
+                            <p>
+                              <i class="fa fa-mobile" aria-hidden="true"></i> + 01 234 567 89</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h5 class="text-uppercase font-weight-bold">Ubicación</h5>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3594068668276!2d-103.41674918559875!3d20.65495200581113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac28cc27ded7%3A0xd00d8f4e5bf759d1!2sSOMALI!5e0!3m2!1ses-419!2smx!4v1563994038049!5m2!1ses-419!2smx" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright text-center py-3 text-muted">
+           &copy;
+           <script>
+            document.write(new Date().getFullYear())
+          </script>
+          <a class="dark-grey-text" href="">SOMALI</a>
+        </div>
 @endsection

@@ -25,9 +25,9 @@
             <thead>
                 <tr>
                     <th class="text-center">#</th>
-                    <th>Nombre</th>
-                    <th class="col-md-4">Descripción</th>
-                    <th>Categoría</th>
+                    <th class="text-center">Nombre</th>
+                    <th class="text-center">Descripción</th>
+                    <th class="text-center">Categoría</th>
                     <th class="text-right">Precio</th>
                     <th class="text-right">Acciones</th>
                 </tr>
@@ -46,14 +46,17 @@
                           {{ csrf_field() }}
                           {{ method_field('DELETE') }}
                           <a href="#" rel="tooltip" title="Ver producto" class="btn btn-info btn-simple btn-xs">
-                            <i class="material-icons">info</i>
+                            <i class="fa fa-info"></i>
                           </a>
                           <a href="{{ url('/admin/products/'.$product->id.'/edit') }}" rel="tooltip" title="Editar producto" class="btn btn-success btn-simple btn-xs">
-                              <i class="material-icons">edit</i>
+                              <i class="fa fa-edit"></i>
+                          </a>
+                          <a href="{{ url('/admin/products/'.$product->id.'/images') }}" rel="tooltip" title="Editar producto" class="btn btn-warning btn-simple btn-xs">
+                              <i class="fa fa-image"></i>
                           </a>
 
                           <button type="submit" rel="tooltip" title="Eliminar producto" class="btn btn-danger btn-simple btn-xs">
-                            <i class="material-icons">close</i>
+                            <i class="fa fa-times"></i>
                           </button>
                         </form>
                     </td>
@@ -73,27 +76,8 @@
         </div>
       </div>
     </div>
+    <br>
   </div>
-  <footer class="footer footer-default">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://www.creative-tim.com">
-              SOMALI
-            </a>
-          </li>
-          
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        <a href="#" target="_blank">SOMALI</a>.
-      </div>
-    </div>
-  </footer>
+   @include('includes.footer')
     
 @endsection
